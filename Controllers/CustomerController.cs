@@ -19,5 +19,18 @@ namespace CoreWebApplication1.Controllers
             ViewBag.CustomerList = customers;
             return View();
         }
+
+        public IActionResult Details()
+        {
+            return View();
+        }
+
+       // [Route("~/")]
+        [Route("~/sample/message")]
+
+        public IActionResult Message()
+        {
+            return View();
+        }
     }
 }
