@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<h3>@ViewBag.Message</h3>
+<h3>@ViewBag.Count</h3>
+<ul>
+    @foreach(var item in ViewBag.CustomerList){
+        <li>@item.Id - @item.Name - @item.Amount</li>
+    }
+ </ul>  
