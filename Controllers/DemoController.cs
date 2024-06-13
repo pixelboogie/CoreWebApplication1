@@ -40,5 +40,21 @@ namespace CoreWebApplication1.Controllers
             TempData["Message"] = TempData["Message"].ToString();
             return View();
         }
+        public IActionResult Login()
+        {
+            HttpContext.Session.SetString("username", "Shane");
+            return RedirectToAction("Success");
+        }
+
+        public IActionResult Success()
+        {
+            ViewBag.Username=HttpContext.Session.GetString("username");
+            return View();  
+        }
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Remove("Username");
+            return RedirectToAction("Index");
+        }
     }
 }
