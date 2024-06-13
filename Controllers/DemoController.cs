@@ -24,6 +24,21 @@ namespace CoreWebApplication1.Controllers
             ViewData["CustomerList"] = customers;
             return View();
         }
- 
-}
+
+        // TempData
+        public IActionResult Method1()
+        {
+            TempData["Message"] = "Customer Management System";
+            TempData["CustomerCount"] = customers.Count();
+            TempData["CustomerList"] = customers;
+            return View();
+        }
+        public IActionResult Method2()
+        {
+            if (TempData["Message"] == null)
+                return RedirectToAction("Index");
+            TempData["Message"] = TempData["Message"].ToString();
+            return View();
+        }
+    }
 }
