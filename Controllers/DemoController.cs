@@ -56,5 +56,15 @@ namespace CoreWebApplication1.Controllers
             HttpContext.Session.Remove("Username");
             return RedirectToAction("Index");
         }
+
+        public IActionResult QueryTest()
+        {
+            string name = "King Richard";
+
+            if(!String.IsNullOrEmpty(HttpContext.Request.Query["name"]))
+                name = HttpContext.Request.Query["name"];
+            ViewBag.Name = name;
+            return View();
+        }
     }
 }

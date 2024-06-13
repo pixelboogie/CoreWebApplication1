@@ -32,6 +32,6 @@ namespace CoreWebApplication1.Controllers
         {
             return View();
         }
-        //[HttpPost]
+
     }
 }
