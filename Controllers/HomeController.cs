@@ -13,6 +13,10 @@ namespace CoreWebApplication1.Controllers
             _logger = logger;
         }
 
+        // *****************************
+        // Index Action Method
+        // returing the view
+        // *****************************
         public IActionResult Index()
         {
             return View();
@@ -23,16 +27,21 @@ namespace CoreWebApplication1.Controllers
             return View();
         }
 
+        // *****************************
+        // Custom Action Method
+        // *****************************
+        public ViewResult Message()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-        public ViewResult Message()
-        {
-            return View();
-        }
+
 
 
 
