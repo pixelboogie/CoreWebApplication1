@@ -25,9 +25,14 @@ namespace CoreWebApplication1.Controllers
             return View();
         }
 
-       // [Route("~/")]
+        // *****************************
+        //  Routing
+        // The Message Action Method will execture
+        // if user accesses "~/sample/message"
+        // attribute routing  overlaods conventional routing
+        // *****************************
+        // [Route("~/")]
         [Route("~/sample/message")]
-
         public IActionResult Message()
         {
             return View();

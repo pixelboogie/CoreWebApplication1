@@ -26,7 +26,11 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.UseSession();
-
+// *****************************
+// Routing
+// Default pattern
+// This makes Customer will be the Home controller
+// *****************************
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Customer}/{action=Index}/{id?}");
