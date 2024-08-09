@@ -3,7 +3,7 @@
 ## Description
 CoreWebApplication1 is a project developed as part of the Coursera course for the ".NET FullStack Developer Specialization" certification. This project focuses on the implementation of CRUD (Create, Read, Update, Delete) operations in an ASP.NET Core MVC application using the Code First approach.
 
-In this project, you'll learn how to set up controllers and initialize the application's DbContext for managing the database. The project also demonstrates how to retrieve data from the database using lambda expressions and bind it to views. Additionally, you'll learn how to scaffold views for CRUD operations and handle actions such as creating, editing, and deleting data.
+In this project, we set up controllers and initialize the application's DbContext for managing the database. The project also demonstrates how to retrieve data from the database using lambda expressions and bind it to views. Additionally, we scaffold views for CRUD operations and handle actions such as creating, editing, and deleting data.
 
 A key focus of the project is understanding lambda expressions and model binding, which are essential for effective communication with the database in ASP.NET Core applications. The project concludes with a demonstration of a complete CRUD operation using Entity Framework Code First approach.
 
